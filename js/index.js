@@ -792,45 +792,6 @@
 // let elems = document.getElementsByClassName('www');
 // console.log(elems);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // zad 51 - 59
 //Задание 51-52
 // //№1
 // let sym1 = Symbol('текстовое описание')
