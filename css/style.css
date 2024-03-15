@@ -1,0 +1,101 @@
+/* Задание 8 */
+#elem1_n8 {
+	width: 200px;
+	height: 200px;
+}
+
+#elem2_n8 {
+	width: 200px;
+	height: 200px;
+}
+
+/* Задание 9 */
+#elem_n9 {
+	font-size: 2em;
+}
+
+/* Задание 10 */
+.success {
+	color: green;
+}
+.error {
+	color: red;
+}
+
+/* Задание 11 */
+/* div.active {
+	color: red;
+}
+div:not(active) {
+	color: black;
+} */
+
+/* Задание 12 */
+.input {
+      border: 2px solid; 
+}
+.valid {
+      border-color: green; 
+}
+.invalid {
+      border-color: red; 
+}
+
+/* Задание 13 */
+[data-type="success"] {
+	border-color: green;
+}
+[data-type="warning"] {
+	border-color: yellow;
+}
+[data-type="error"] {
+	border-color: red;
+}
+
+/* Задание 15 */
+#elem_n15 {
+	width: 300px;
+	height: 150px;
+	margin: 50px auto;
+	padding: 25px;
+	background: #CFF5BF;
+	border: 25px solid #F0D7A1;
+	overflow: auto;
+	text-align: justify; 
+}
+
+/* Задание 20 */
+#elem_n20 {
+	width: 300px;
+	height: 150px;
+	margin: 50px auto;
+	padding: 25px;
+	background: #CFF5BF;
+	border: 25px solid #F0D7A1;
+	overflow: auto;
+	text-align: justify; 
+}
+
+/* Задание 21 */
+#elem_n21 {
+	width: 300px;
+	height: 150px;
+	margin: 50px auto;
+	padding: 25px;
+	background: #CFF5BF;
+	border: 25px solid #F0D7A1;
+	overflow: auto;
+	text-align: justify; 
+}
+
+/* Задание 22 */
+#elem_n22 {
+	width: 300px;
+	height: 150px;
+	margin: 50px auto;
+	padding: 25px;
+	background: #CFF5BF;
+	border: 25px solid #F0D7A1;
+	overflow: auto;
+	text-align: justify; 
+}
