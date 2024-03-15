@@ -819,40 +819,74 @@
 // //№1
 // let obj = {a: 1, b: 2, c: 3};
 // let sym = Symbol();
-// obj[sym] = '4'
 // obj[sym] = function () {
-// 	console.log(new Date())
-// 	console.log(this)
+// 	console.log (new Date());
+// 	console.log(this);
 // }
 
-//Задание 56-59
-// for (let key in obj) {
-// 	console.log(obj[key])
+//Задание 56
+// //№1-№3
+// let elems = document.getElementsByClassName('www');
+// let arr = [1, 2, 3];
+
+// for (let elem of elems) {
+// 	arr.push(+elem.textContent);
 // }
+// console.log(arr);
 
-// obj[sym]()
-
-// obj[sym] = function () {
-// 	let sum = 0
-
+// let sym = Symbol();
+// arr[sym] = function() {
+// 	let sum = 0;
 // 	for (let key in this) {
-// 		sum += this[key]
+// 		sum += this[key];
 // 	}
+// return sum;
+// };
+// let sum = arr[sym]();
+// console.log(sum);
 
-// 	return sum
-// }
+//Задание 57
+// //№1
+// // Создаем объекты
+// let obj1 = { a: 1, b: 2, c: 3 };
+// let obj2 = { x: 10, y: 20, z: 30 };
 
-// console.log(obj[sym]())
+// // Создаем символ 'sum'
+// let sumSymbol = Symbol.for('sum');
 
-// // С помощью метода Symbol.for можно создавать символы с именем. Эти символы будут сохранены в глобальный реестр символов и доступ к ним можно будет получить из любого места кода.
+// // Добавляем каждому объекту ключ 'sum' с функцией для вычисления суммы
+// obj1[sumSymbol] = function() {
+//     let sum = 0;
+//     for (let key in this) {
+//         sum += this[key];
+//     }
+//     return sum;
+// };
 
-// let sym3 = Symbol.for('test1')
-// let sym4 = Symbol.for('test2')
+// obj2[sumSymbol] = function() {
+//     let sum = 0;
+//     for (let key in this) {
+//         sum += this[key];
+//     }
+//     return sum;
+// };
 
-// console.log(Symbol.keyFor(sym3), Symbol.keyFor(sym4))
+// console.log(obj1[sumSymbol]());
+// console.log(obj2[sumSymbol]());
 
-// let setTest = new Set()
-// console.log(setTest[Symbol.iterator])
+//Задание 58
+// //№1
+// let sym1 = Symbol.for('test1')
+// let sym2 = Symbol.for('test2');
+// let key1 = Symbol.keyFor(sym1);
+// let key2 = Symbol.keyFor(sym2);
+// console.log(key1);
+// console.log(key2);
 
+//Задание 59
+// //№1
 // let mapTest = new Map()
 // console.log(mapTest[Symbol.iterator])
+// //№2
+// let setTest = new Set()
+// console.log(setTest[Symbol.iterator])
